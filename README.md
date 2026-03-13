@@ -1,7 +1,14 @@
- 2D Object Management
-1. Нужно подключить SFML 
-2. Программа называется main.exe
-3. Для того что запустить программу нужно создать файлы main.o и main.exe
-    Необходимо создать терминал 
-    Для создания файла main.o необходимо ввести команду в терминал: g++ -c main.cpp -I"C:\SFML-2.6.1-windows-gcc-13.1.0-mingw-64-bit\SFML-2.6.1\include" -DSFML_STATIC
-    Для создания файла main.exe необходимо ввести команду в терминал: g++ main.o -o main -L"C:\SFML-2.6.1-windows-gcc-13.1.0-mingw-64-bit\SFML-2.6.1\lib" -lsfml-graphics-s -lsfml-window-s -lsfml-system-s -lopengl32 -lfreetype -lwinmm -lgdi32 -mwindows -lsfml-main
+# KURS_SFML
+Управление 2D-объектом с помощью библиотеки SFML.
+## Требования
+* Компилятор C++17 (MSVC 64-bit)
+* CMake
+* SFML 2.6.1 (Visual C++ 17 2022 64-bit)
+## Управление
+* Стрелка Влево: движение влево
+* Стрелка Вправо: движение вправо
+* Стрелка Вверх: движение вверх
+* Стрелка Вниз: движение вниз
+## Настройка и сборка (VS Code)
+1. Укажите актуальный путь к распакованной библиотеке SFML в переменной `SFML_DIR` внутри `CMakeLists.txt`.
+2. Соберите и запустите проект
